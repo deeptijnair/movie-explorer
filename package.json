@@ -1,0 +1,22 @@
+{
+  "name": "movie-explorer",
+  "version": "1.0.0",
+  "description": "A vanilla JavaScript movie search application built to practice\r asynchronous JavaScript and working with REST APIs.",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --env-file=.env server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deeptijnair/movie-explorer.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/deeptijnair/movie-explorer/issues"
+  },
+  "homepage": "https://github.com/deeptijnair/movie-explorer#readme"
+}
