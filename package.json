@@ -5,7 +5,8 @@
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node --env-file=.env server.js"
+    "start": "node --env-file=.env server.js",
+    "dev:css": "npx @tailwindcss/cli -i ./src/input.css -o ./style.css --watch"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/deeptijnair/movie-explorer/issues"
   },
-  "homepage": "https://github.com/deeptijnair/movie-explorer#readme"
+  "homepage": "https://github.com/deeptijnair/movie-explorer#readme",
+  "devDependencies": {
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
+  }
 }
