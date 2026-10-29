@@ -6,19 +6,25 @@
     <link rel="stylesheet" href="style.css" />
     <title>Movie Explorer</title>
   </head>
-  <body>
-    <h1>Welcome to Movie Explorer</h1>
-    <p>Discover and explore your favorite movies.</p>
+  <body class="min-h-screen bg-slate-950 text-slate-100">
+    <main class="mx-auto max-w-6xl px-6 py-12">
+      <header class="mb-10">
+        <h1 class="text-4xl font-bold mb-4">Welcome to Movie Explorer</h1>
+        <p class="text-lg text-slate-400">Discover and explore your favorite movies.</p>
+      </header>
+      <section>
+        <div class="flex gap-3 items-center">
+          <input class="flex-1 rounded-lg border border-slate-700 bg-slate-900 px-4 py-3 text-slate-100" id="searchInput" type="text" placeholder="Search for movies..." />
+          <button class="rounded-lg bg-blue-600 px-5 py-3 font-semibold text-white hover:bg-blue-500 transition-colors" id="mybutton" type="button">Search</button>
+        </div>
+        <div class="mt-4 text-slate-400" id="status"></div>
+      </section>
 
-    <!-- <div class="search"> -->
-      <input id ="searchInput" type="text" placeholder="Search for movies..." />
-      <button id="mybutton" type="button">Search</button>
-    <!-- </div> -->
-
-    <div id="status"></div>
-
-    <!-- Results of the search button will be displayed here -->
-    <div id="results"></div>
-    <script src = 'script.js'></script>
+      <!-- Results of the search button will be displayed here -->
+      <section class="mt-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="results"></div>
+      </section>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
